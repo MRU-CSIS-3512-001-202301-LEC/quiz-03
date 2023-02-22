@@ -7,7 +7,6 @@ const editor = {
 const FIEND_FOLIO = {
   title: "The Fiend Folio",
   released: 1981,
-  pages: 128,
   editor,
   monsters: [],
   addMonster: function (monster) {
@@ -16,12 +15,15 @@ const FIEND_FOLIO = {
   numMonsters: function () {
     this.monsters.length;
   },
-  toString: function () {
-    return `${this.title} ${this.released}`;
-  },
-  listMonsters: function () {
-    for (const monster of this.monsters) {
-      console.log(monster);
-    }
-  },
 };
+
+// your suggested code for Q5-a would go here
+
+console.log("1", FIEND_FOLIO.editor["born"]);
+
+FIEND_FOLIO.addMonster("Beholder");
+FIEND_FOLIO.addMonster("Blink Dog");
+
+let blorp = (a, b) => a[b];
+
+console.log("2", blorp(FIEND_FOLIO.monsters, 0));
