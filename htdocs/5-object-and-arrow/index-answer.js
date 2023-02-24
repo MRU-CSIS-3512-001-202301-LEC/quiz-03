@@ -30,3 +30,5 @@ FIEND_FOLIO.addMonster("Blink Dog");
 let blorp = (a, b) => a[b];
 
 console.log("2", blorp(FIEND_FOLIO.monsters, 0));
+
+console.log(FIEND_FOLIO.toString());
